@@ -1,0 +1,10 @@
+<%= image_tag @picture.image.url %>
+
+<p>
+  <b>Title:</b>
+  <%=h @picture.title %>
+</p>
+
+
+<%= link_to 'Edit', edit_relationship_picture_path(@relationship, @picture) %> |
+<%= link_to 'Back', relationship_pictures_path %>

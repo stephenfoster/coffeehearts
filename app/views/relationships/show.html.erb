@@ -1,0 +1,19 @@
+<p>
+  <b>First user:</b>
+  <%=h @relationship.first_user %>
+</p>
+
+<p>
+  <b>Second user:</b>
+  <%=h @relationship.second_user %>
+</p>
+
+<p>
+  <b>Pictures<b><br/>
+  <% @relationship.pictures.sort_by{|p| p.updated_at}.each do |pic| %>
+    <%= link_to (image_tag pic.image.url, {:width=>200, :height=>150}), relationship_picture_path(@relationship,pic) %> <br/>
+  <% end %>
+</p>
+
+<%= link_to 'Edit', edit_relationship_path(@relationship) %> |
+<%= link_to 'Back', relationships_path %>

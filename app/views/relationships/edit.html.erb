@@ -1,0 +1,20 @@
+<h1>Editing relationship</h1>
+
+<% form_for(@relationship) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :first_user_id %><br />
+    <%= collection_select :relationship, :first_user_id, User.all, :id, :full_name %>
+  </p>
+  <p>
+    <%= f.label :second_user_id %><br />
+    <%= collection_select :relationship, :second_user_id, User.all, :id, :full_name %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @relationship %> |
+<%= link_to 'Back', relationships_path %>

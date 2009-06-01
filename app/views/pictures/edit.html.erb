@@ -1,0 +1,22 @@
+<h1>Editing picture</h1>
+
+<%= image_tag @picture.image.url %>
+
+<% form_for [@relationship,@picture] , :html => { :multipart => true } do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :image %><br />
+    <%= f.file_field :image %>
+  </p>
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', [@relationship, @picture] %> |
+<%= link_to 'Back', relationship_pictures_path %>
