@@ -1,0 +1,807 @@
+# Logfile created on Mon Jun 01 14:15:06 -0500 2009 by /
+Will use local index.
+Will use local index.
+Will use local index.
+Will use local index.
+using index in /home/stephen/coffeehearts/index/development/user
+[user] rebuild index with models: []
+[user] reopening index at /home/stephen/coffeehearts/index/development/user
+[user] register class User with index user
+[user] default field list for index user: [:first_name, :last_name]
+index_for [User(id: integer, login: string, email: string, crypted_password: string, salt: string, created_at: datetime, updated_at: datetime, remember_token: string, remember_token_expires_at: datetime, first_name: string, last_name: string)]
+options: {:offset=>nil, :limit=>nil}
+ar_options: {}
+[user] stored_fields: nil
+[user] query: hott
+-->+(first_name:hott last_name:hott) +(class_name:User)
+[user] now retrieving records from AR with options: {}
+[user] 0 results from AR: []
+Query: hott
+total hits: 0, results delivered: 0
+index_for [User(id: integer, login: string, email: string, crypted_password: string, salt: string, created_at: datetime, updated_at: datetime, remember_token: string, remember_token_expires_at: datetime, first_name: string, last_name: string)]
+options: {:offset=>nil, :limit=>nil}
+ar_options: {}
+[user] stored_fields: nil
+[user] query: Hott
+-->+(first_name:hott last_name:hott) +(class_name:User)
+[user] now retrieving records from AR with options: {}
+[user] 0 results from AR: []
+Query: Hott
+total hits: 0, results delivered: 0
+index_for [User(id: integer, login: string, email: string, crypted_password: string, salt: string, created_at: datetime, updated_at: datetime, remember_token: string, remember_token_expires_at: datetime, first_name: string, last_name: string)]
+options: {:offset=>nil, :limit=>nil}
+ar_options: {}
+[user] stored_fields: nil
+[user] query: stephen
+-->+(first_name:stephen last_name:stephen) +(class_name:User)
+[user] now retrieving records from AR with options: {}
+[user] 0 results from AR: []
+Query: stephen
+total hits: 0, results delivered: 0
+index_for [User(id: integer, login: string, email: string, crypted_password: string, salt: string, created_at: datetime, updated_at: datetime, remember_token: string, remember_token_expires_at: datetime, first_name: string, last_name: string)]
+options: {:offset=>nil, :limit=>nil}
+ar_options: {}
+[user] stored_fields: nil
+[user] query: asdf
+-->+(first_name:asdf last_name:asdf) +(class_name:User)
+[user] now retrieving records from AR with options: {}
+[user] 1 results from AR: [#<User id: 6, login: "asdf", email: "asdf@asdf.com", crypted_password: "70f6f3e93fbd4ddd742420fc3891e94d8d66e5e1", salt: "1c69890e684fd6437aaf37d2413a08a3b371f64a", created_at: "2009-06-01 19:19:33", updated_at: "2009-06-01 19:19:33", remember_token: nil, remember_token_expires_at: nil, first_name: "asdf", last_name: "asdf">]
+Query: asdf
+total hits: 1, results delivered: 1
+index_for [User(id: integer, login: string, email: string, crypted_password: string, salt: string, created_at: datetime, updated_at: datetime, remember_token: string, remember_token_expires_at: datetime, first_name: string, last_name: string)]
+options: {:offset=>nil, :limit=>nil}
+ar_options: {}
+[user] stored_fields: nil
+[user] query: adf
+-->+(first_name:adf last_name:adf) +(class_name:User)
+[user] now retrieving records from AR with options: {}
+[user] 0 results from AR: []
+Query: adf
+total hits: 0, results delivered: 0
+index_for [User(id: integer, login: string, email: string, crypted_password: string, salt: string, created_at: datetime, updated_at: datetime, remember_token: string, remember_token_expires_at: datetime, first_name: string, last_name: string)]
+options: {:offset=>nil, :limit=>nil}
+ar_options: {}
+[user] stored_fields: nil
+[user] query: stephen
+-->+(first_name:stephen last_name:stephen) +(class_name:User)
+[user] now retrieving records from AR with options: {}
+[user] 0 results from AR: []
+Query: stephen
+total hits: 0, results delivered: 0
+index_for [User(id: integer, login: string, email: string, crypted_password: string, salt: string, created_at: datetime, updated_at: datetime, remember_token: string, remember_token_expires_at: datetime, first_name: string, last_name: string)]
+options: {:offset=>nil, :limit=>nil}
+ar_options: {}
+[user] stored_fields: nil
+[user] query: Stephen
+-->+(first_name:stephen last_name:stephen) +(class_name:User)
+[user] now retrieving records from AR with options: {}
+[user] 0 results from AR: []
+Query: Stephen
+total hits: 0, results delivered: 0
+index_for [User(id: integer, login: string, email: string, crypted_password: string, salt: string, created_at: datetime, updated_at: datetime, remember_token: string, remember_token_expires_at: datetime, first_name: string, last_name: string)]
+options: {:offset=>nil, :limit=>nil}
+ar_options: {}
+[user] stored_fields: nil
+[user] query: Stephen
+-->+(first_name:stephen last_name:stephen) +(class_name:User)
+[user] now retrieving records from AR with options: {}
+[user] 0 results from AR: []
+Query: Stephen
+total hits: 0, results delivered: 0
+Will use local index.
+Will use local index.
+Will use local index.
+Will use local index.
+Will use local index.
+Will use local index.
+Will use local index.
+using index in /home/stephen/coffeehearts/index/development/user
+[user] register class User with index user
+[user] default field list for index user: [:last_name, :first_name]
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+index_for [User(id: integer, login: string, email: string, crypted_password: string, salt: string, created_at: datetime, updated_at: datetime, remember_token: string, remember_token_expires_at: datetime, first_name: string, last_name: string)]
+options: {:per_page=>nil, :limit=>nil, :offset=>nil}
+ar_options: {}
+[user] stored_fields: nil
+[user] query: asdf
+-->+(last_name:asdf first_name:asdf) +(class_name:User)
+[user] now retrieving records from AR with options: {}
+[user] 1 results from AR: [#<User id: 6, login: "asdf", email: "asdf@asdf.com", crypted_password: "70f6f3e93fbd4ddd742420fc3891e94d8d66e5e1", salt: "1c69890e684fd6437aaf37d2413a08a3b371f64a", created_at: "2009-06-01 19:19:33", updated_at: "2009-06-01 19:19:33", remember_token: nil, remember_token_expires_at: nil, first_name: "asdf", last_name: "asdf">]
+Query: asdf
+total hits: 1, results delivered: 1
+[user] register class User with index user
+[user] refusing re-registration of class User
+index_for [User(id: integer, login: string, email: string, crypted_password: string, salt: string, created_at: datetime, updated_at: datetime, remember_token: string, remember_token_expires_at: datetime, first_name: string, last_name: string)]
+options: {:per_page=>nil, :limit=>nil, :offset=>nil}
+ar_options: {}
+[user] stored_fields: nil
+[user] query: asdf
+-->+(last_name:asdf first_name:asdf) +(class_name:User)
+[user] now retrieving records from AR with options: {}
+[user] 1 results from AR: [#<User id: 6, login: "asdf", email: "asdf@asdf.com", crypted_password: "70f6f3e93fbd4ddd742420fc3891e94d8d66e5e1", salt: "1c69890e684fd6437aaf37d2413a08a3b371f64a", created_at: "2009-06-01 19:19:33", updated_at: "2009-06-01 19:19:33", remember_token: nil, remember_token_expires_at: nil, first_name: "asdf", last_name: "asdf">]
+Query: asdf
+total hits: 1, results delivered: 1
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+index_for [User(id: integer, login: string, email: string, crypted_password: string, salt: string, created_at: datetime, updated_at: datetime, remember_token: string, remember_token_expires_at: datetime, first_name: string, last_name: string)]
+options: {:per_page=>nil, :limit=>nil, :offset=>nil}
+ar_options: {}
+[user] stored_fields: nil
+[user] query: asdf
+-->+(last_name:asdf first_name:asdf) +(class_name:User)
+[user] now retrieving records from AR with options: {}
+[user] 1 results from AR: [#<User id: 6, login: "asdf", email: "asdf@asdf.com", crypted_password: "70f6f3e93fbd4ddd742420fc3891e94d8d66e5e1", salt: "1c69890e684fd6437aaf37d2413a08a3b371f64a", created_at: "2009-06-01 19:19:33", updated_at: "2009-06-01 19:19:33", remember_token: nil, remember_token_expires_at: nil, first_name: "asdf", last_name: "asdf">]
+Query: asdf
+total hits: 1, results delivered: 1
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+index_for [User(id: integer, login: string, email: string, crypted_password: string, salt: string, created_at: datetime, updated_at: datetime, remember_token: string, remember_token_expires_at: datetime, first_name: string, last_name: string)]
+options: {:per_page=>nil, :limit=>nil, :offset=>nil}
+ar_options: {}
+[user] stored_fields: nil
+[user] query: sadf
+-->+(last_name:sadf first_name:sadf) +(class_name:User)
+[user] now retrieving records from AR with options: {}
+[user] 0 results from AR: []
+Query: sadf
+total hits: 0, results delivered: 0
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+index_for [User(id: integer, login: string, email: string, crypted_password: string, salt: string, created_at: datetime, updated_at: datetime, remember_token: string, remember_token_expires_at: datetime, first_name: string, last_name: string)]
+options: {:per_page=>nil, :limit=>nil, :offset=>nil}
+ar_options: {}
+[user] stored_fields: nil
+[user] query: asdf
+-->+(last_name:asdf first_name:asdf) +(class_name:User)
+[user] now retrieving records from AR with options: {}
+[user] 1 results from AR: [#<User id: 6, login: "asdf", email: "asdf@asdf.com", crypted_password: "70f6f3e93fbd4ddd742420fc3891e94d8d66e5e1", salt: "1c69890e684fd6437aaf37d2413a08a3b371f64a", created_at: "2009-06-01 19:19:33", updated_at: "2009-06-01 19:19:33", remember_token: nil, remember_token_expires_at: nil, first_name: "asdf", last_name: "asdf">]
+Query: asdf
+total hits: 1, results delivered: 1
+[user] register class User with index user
+[user] refusing re-registration of class User
+index_for [User(id: integer, login: string, email: string, crypted_password: string, salt: string, created_at: datetime, updated_at: datetime, remember_token: string, remember_token_expires_at: datetime, first_name: string, last_name: string)]
+options: {:per_page=>nil, :limit=>nil, :offset=>nil}
+ar_options: {}
+[user] stored_fields: nil
+[user] query: asdf
+-->+(last_name:asdf first_name:asdf) +(class_name:User)
+[user] now retrieving records from AR with options: {}
+[user] 1 results from AR: [#<User id: 6, login: "asdf", email: "asdf@asdf.com", crypted_password: "70f6f3e93fbd4ddd742420fc3891e94d8d66e5e1", salt: "1c69890e684fd6437aaf37d2413a08a3b371f64a", created_at: "2009-06-01 19:19:33", updated_at: "2009-06-01 19:19:33", remember_token: nil, remember_token_expires_at: nil, first_name: "asdf", last_name: "asdf">]
+Query: asdf
+total hits: 1, results delivered: 1
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+index_for [User(id: integer, login: string, email: string, crypted_password: string, salt: string, created_at: datetime, updated_at: datetime, remember_token: string, remember_token_expires_at: datetime, first_name: string, last_name: string)]
+options: {:per_page=>nil, :limit=>nil, :offset=>nil}
+ar_options: {}
+[user] stored_fields: nil
+[user] query: asdf
+-->+(last_name:asdf first_name:asdf) +(class_name:User)
+[user] now retrieving records from AR with options: {}
+[user] 1 results from AR: [#<User id: 6, login: "asdf", email: "asdf@asdf.com", crypted_password: "70f6f3e93fbd4ddd742420fc3891e94d8d66e5e1", salt: "1c69890e684fd6437aaf37d2413a08a3b371f64a", created_at: "2009-06-01 19:19:33", updated_at: "2009-06-01 19:19:33", remember_token: nil, remember_token_expires_at: nil, first_name: "asdf", last_name: "asdf">]
+Query: asdf
+total hits: 1, results delivered: 1
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+index_for [User(id: integer, login: string, email: string, crypted_password: string, salt: string, created_at: datetime, updated_at: datetime, remember_token: string, remember_token_expires_at: datetime, first_name: string, last_name: string)]
+options: {:per_page=>nil, :limit=>nil, :offset=>nil}
+ar_options: {}
+[user] stored_fields: nil
+[user] query: asdf
+-->+(last_name:asdf first_name:asdf) +(class_name:User)
+[user] now retrieving records from AR with options: {}
+[user] 1 results from AR: [#<User id: 6, login: "asdf", email: "asdf@asdf.com", crypted_password: "70f6f3e93fbd4ddd742420fc3891e94d8d66e5e1", salt: "1c69890e684fd6437aaf37d2413a08a3b371f64a", created_at: "2009-06-01 19:19:33", updated_at: "2009-06-01 19:19:33", remember_token: nil, remember_token_expires_at: nil, first_name: "asdf", last_name: "asdf">]
+Query: asdf
+total hits: 1, results delivered: 1
+[user] register class User with index user
+[user] refusing re-registration of class User
+index_for [User(id: integer, login: string, email: string, crypted_password: string, salt: string, created_at: datetime, updated_at: datetime, remember_token: string, remember_token_expires_at: datetime, first_name: string, last_name: string)]
+options: {:per_page=>nil, :limit=>nil, :offset=>nil}
+ar_options: {}
+[user] stored_fields: nil
+[user] query: asdf
+-->+(last_name:asdf first_name:asdf) +(class_name:User)
+[user] now retrieving records from AR with options: {}
+[user] 1 results from AR: [#<User id: 6, login: "asdf", email: "asdf@asdf.com", crypted_password: "70f6f3e93fbd4ddd742420fc3891e94d8d66e5e1", salt: "1c69890e684fd6437aaf37d2413a08a3b371f64a", created_at: "2009-06-01 19:19:33", updated_at: "2009-06-01 19:19:33", remember_token: nil, remember_token_expires_at: nil, first_name: "asdf", last_name: "asdf">]
+Query: asdf
+total hits: 1, results delivered: 1
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+index_for [User(id: integer, login: string, email: string, crypted_password: string, salt: string, created_at: datetime, updated_at: datetime, remember_token: string, remember_token_expires_at: datetime, first_name: string, last_name: string)]
+options: {:per_page=>nil, :limit=>nil, :offset=>nil}
+ar_options: {}
+[user] stored_fields: nil
+[user] query: asdf
+-->+(last_name:asdf first_name:asdf) +(class_name:User)
+[user] now retrieving records from AR with options: {}
+[user] 1 results from AR: [#<User id: 6, login: "asdf", email: "asdf@asdf.com", crypted_password: "70f6f3e93fbd4ddd742420fc3891e94d8d66e5e1", salt: "1c69890e684fd6437aaf37d2413a08a3b371f64a", created_at: "2009-06-01 19:19:33", updated_at: "2009-06-01 19:19:33", remember_token: nil, remember_token_expires_at: nil, first_name: "asdf", last_name: "asdf">]
+Query: asdf
+total hits: 1, results delivered: 1
+[user] register class User with index user
+[user] refusing re-registration of class User
+index_for [User(id: integer, login: string, email: string, crypted_password: string, salt: string, created_at: datetime, updated_at: datetime, remember_token: string, remember_token_expires_at: datetime, first_name: string, last_name: string)]
+options: {:per_page=>nil, :limit=>nil, :offset=>nil}
+ar_options: {}
+[user] stored_fields: nil
+[user] query: asdf
+-->+(last_name:asdf first_name:asdf) +(class_name:User)
+[user] now retrieving records from AR with options: {}
+[user] 1 results from AR: [#<User id: 6, login: "asdf", email: "asdf@asdf.com", crypted_password: "70f6f3e93fbd4ddd742420fc3891e94d8d66e5e1", salt: "1c69890e684fd6437aaf37d2413a08a3b371f64a", created_at: "2009-06-01 19:19:33", updated_at: "2009-06-01 19:19:33", remember_token: nil, remember_token_expires_at: nil, first_name: "asdf", last_name: "asdf">]
+Query: asdf
+total hits: 1, results delivered: 1
+[user] register class User with index user
+[user] refusing re-registration of class User
+index_for [User(id: integer, login: string, email: string, crypted_password: string, salt: string, created_at: datetime, updated_at: datetime, remember_token: string, remember_token_expires_at: datetime, first_name: string, last_name: string)]
+options: {:per_page=>nil, :limit=>nil, :offset=>nil}
+ar_options: {}
+[user] stored_fields: nil
+[user] query: asdf
+-->+(last_name:asdf first_name:asdf) +(class_name:User)
+[user] now retrieving records from AR with options: {}
+[user] 1 results from AR: [#<User id: 6, login: "asdf", email: "asdf@asdf.com", crypted_password: "70f6f3e93fbd4ddd742420fc3891e94d8d66e5e1", salt: "1c69890e684fd6437aaf37d2413a08a3b371f64a", created_at: "2009-06-01 19:19:33", updated_at: "2009-06-01 19:19:33", remember_token: nil, remember_token_expires_at: nil, first_name: "asdf", last_name: "asdf">]
+Query: asdf
+total hits: 1, results delivered: 1
+[user] register class User with index user
+[user] refusing re-registration of class User
+index_for [User(id: integer, login: string, email: string, crypted_password: string, salt: string, created_at: datetime, updated_at: datetime, remember_token: string, remember_token_expires_at: datetime, first_name: string, last_name: string)]
+options: {:per_page=>nil, :limit=>nil, :offset=>nil}
+ar_options: {}
+[user] stored_fields: nil
+[user] query: asdf
+-->+(last_name:asdf first_name:asdf) +(class_name:User)
+[user] now retrieving records from AR with options: {}
+[user] 1 results from AR: [#<User id: 6, login: "asdf", email: "asdf@asdf.com", crypted_password: "70f6f3e93fbd4ddd742420fc3891e94d8d66e5e1", salt: "1c69890e684fd6437aaf37d2413a08a3b371f64a", created_at: "2009-06-01 19:19:33", updated_at: "2009-06-01 19:19:33", remember_token: nil, remember_token_expires_at: nil, first_name: "asdf", last_name: "asdf">]
+Query: asdf
+total hits: 1, results delivered: 1
+[user] register class User with index user
+[user] refusing re-registration of class User
+index_for [User(id: integer, login: string, email: string, crypted_password: string, salt: string, created_at: datetime, updated_at: datetime, remember_token: string, remember_token_expires_at: datetime, first_name: string, last_name: string)]
+options: {:per_page=>nil, :limit=>nil, :offset=>nil}
+ar_options: {}
+[user] stored_fields: nil
+[user] query: asdf
+-->+(last_name:asdf first_name:asdf) +(class_name:User)
+[user] now retrieving records from AR with options: {}
+[user] 1 results from AR: [#<User id: 6, login: "asdf", email: "asdf@asdf.com", crypted_password: "70f6f3e93fbd4ddd742420fc3891e94d8d66e5e1", salt: "1c69890e684fd6437aaf37d2413a08a3b371f64a", created_at: "2009-06-01 19:19:33", updated_at: "2009-06-01 19:19:33", remember_token: nil, remember_token_expires_at: nil, first_name: "asdf", last_name: "asdf">]
+Query: asdf
+total hits: 1, results delivered: 1
+[user] register class User with index user
+[user] refusing re-registration of class User
+index_for [User(id: integer, login: string, email: string, crypted_password: string, salt: string, created_at: datetime, updated_at: datetime, remember_token: string, remember_token_expires_at: datetime, first_name: string, last_name: string)]
+options: {:per_page=>nil, :limit=>nil, :offset=>nil}
+ar_options: {}
+[user] stored_fields: nil
+[user] query: asdf
+-->+(last_name:asdf first_name:asdf) +(class_name:User)
+[user] now retrieving records from AR with options: {}
+[user] 1 results from AR: [#<User id: 6, login: "asdf", email: "asdf@asdf.com", crypted_password: "70f6f3e93fbd4ddd742420fc3891e94d8d66e5e1", salt: "1c69890e684fd6437aaf37d2413a08a3b371f64a", created_at: "2009-06-01 19:19:33", updated_at: "2009-06-01 19:19:33", remember_token: nil, remember_token_expires_at: nil, first_name: "asdf", last_name: "asdf">]
+Query: asdf
+total hits: 1, results delivered: 1
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+index_for [User(id: integer, login: string, email: string, crypted_password: string, salt: string, created_at: datetime, updated_at: datetime, remember_token: string, remember_token_expires_at: datetime, first_name: string, last_name: string)]
+options: {:per_page=>nil, :limit=>nil, :offset=>nil}
+ar_options: {}
+[user] stored_fields: nil
+[user] query: asdf
+-->+(last_name:asdf first_name:asdf) +(class_name:User)
+[user] now retrieving records from AR with options: {}
+[user] 1 results from AR: [#<User id: 6, login: "asdf", email: "asdf@asdf.com", crypted_password: "70f6f3e93fbd4ddd742420fc3891e94d8d66e5e1", salt: "1c69890e684fd6437aaf37d2413a08a3b371f64a", created_at: "2009-06-01 19:19:33", updated_at: "2009-06-01 19:19:33", remember_token: nil, remember_token_expires_at: nil, first_name: "asdf", last_name: "asdf">]
+Query: asdf
+total hits: 1, results delivered: 1
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+index_for [User(id: integer, login: string, email: string, crypted_password: string, salt: string, created_at: datetime, updated_at: datetime, remember_token: string, remember_token_expires_at: datetime, first_name: string, last_name: string)]
+options: {:per_page=>nil, :limit=>nil, :offset=>nil}
+ar_options: {}
+[user] stored_fields: nil
+[user] query: asdf
+-->+(last_name:asdf first_name:asdf) +(class_name:User)
+[user] now retrieving records from AR with options: {}
+[user] 1 results from AR: [#<User id: 6, login: "asdf", email: "asdf@asdf.com", crypted_password: "70f6f3e93fbd4ddd742420fc3891e94d8d66e5e1", salt: "1c69890e684fd6437aaf37d2413a08a3b371f64a", created_at: "2009-06-01 19:19:33", updated_at: "2009-06-01 19:19:33", remember_token: nil, remember_token_expires_at: nil, first_name: "asdf", last_name: "asdf">]
+Query: asdf
+total hits: 1, results delivered: 1
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+index_for [User(id: integer, login: string, email: string, crypted_password: string, salt: string, created_at: datetime, updated_at: datetime, remember_token: string, remember_token_expires_at: datetime, first_name: string, last_name: string)]
+options: {:per_page=>nil, :limit=>nil, :offset=>nil}
+ar_options: {}
+[user] stored_fields: nil
+[user] query: asdf
+-->+(last_name:asdf first_name:asdf) +(class_name:User)
+[user] now retrieving records from AR with options: {}
+[user] 1 results from AR: [#<User id: 6, login: "asdf", email: "asdf@asdf.com", crypted_password: "70f6f3e93fbd4ddd742420fc3891e94d8d66e5e1", salt: "1c69890e684fd6437aaf37d2413a08a3b371f64a", created_at: "2009-06-01 19:19:33", updated_at: "2009-06-01 19:19:33", remember_token: nil, remember_token_expires_at: nil, first_name: "asdf", last_name: "asdf">]
+Query: asdf
+total hits: 1, results delivered: 1
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+index_for [User(id: integer, login: string, email: string, crypted_password: string, salt: string, created_at: datetime, updated_at: datetime, remember_token: string, remember_token_expires_at: datetime, first_name: string, last_name: string)]
+options: {:per_page=>nil, :limit=>nil, :offset=>nil}
+ar_options: {}
+[user] stored_fields: nil
+[user] query: asdf
+-->+(last_name:asdf first_name:asdf) +(class_name:User)
+[user] now retrieving records from AR with options: {}
+[user] 1 results from AR: [#<User id: 6, login: "asdf", email: "asdf@asdf.com", crypted_password: "70f6f3e93fbd4ddd742420fc3891e94d8d66e5e1", salt: "1c69890e684fd6437aaf37d2413a08a3b371f64a", created_at: "2009-06-01 19:19:33", updated_at: "2009-06-01 19:19:33", remember_token: nil, remember_token_expires_at: nil, first_name: "asdf", last_name: "asdf">]
+Query: asdf
+total hits: 1, results delivered: 1
+[user] register class User with index user
+[user] refusing re-registration of class User
+Will use local index.
+using index in /home/stephen/coffeehearts/index/development/user
+[user] register class User with index user
+[user] default field list for index user: [:last_name, :first_name]
+[user] register class User with index user
+[user] refusing re-registration of class User
+index_for [User(id: integer, login: string, email: string, crypted_password: string, salt: string, created_at: datetime, updated_at: datetime, remember_token: string, remember_token_expires_at: datetime, first_name: string, last_name: string)]
+options: {:per_page=>nil, :limit=>nil, :offset=>nil}
+ar_options: {}
+[user] stored_fields: nil
+[user] query: asdf
+-->+(last_name:asdf first_name:asdf) +(class_name:User)
+[user] now retrieving records from AR with options: {}
+[user] 1 results from AR: [#<User id: 6, login: "asdf", email: "asdf@asdf.com", crypted_password: "70f6f3e93fbd4ddd742420fc3891e94d8d66e5e1", salt: "1c69890e684fd6437aaf37d2413a08a3b371f64a", created_at: "2009-06-01 19:19:33", updated_at: "2009-06-01 19:19:33", remember_token: nil, remember_token_expires_at: nil, first_name: "asdf", last_name: "asdf">]
+Query: asdf
+total hits: 1, results delivered: 1
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+index_for [User(id: integer, login: string, email: string, crypted_password: string, salt: string, created_at: datetime, updated_at: datetime, remember_token: string, remember_token_expires_at: datetime, first_name: string, last_name: string)]
+options: {:per_page=>nil, :limit=>nil, :offset=>nil}
+ar_options: {}
+[user] stored_fields: nil
+[user] query: asdf
+-->+(last_name:asdf first_name:asdf) +(class_name:User)
+[user] now retrieving records from AR with options: {}
+[user] 1 results from AR: [#<User id: 6, login: "asdf", email: "asdf@asdf.com", crypted_password: "70f6f3e93fbd4ddd742420fc3891e94d8d66e5e1", salt: "1c69890e684fd6437aaf37d2413a08a3b371f64a", created_at: "2009-06-01 19:19:33", updated_at: "2009-06-01 19:19:33", remember_token: nil, remember_token_expires_at: nil, first_name: "asdf", last_name: "asdf">]
+Query: asdf
+total hits: 1, results delivered: 1
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+index_for [User(id: integer, login: string, email: string, crypted_password: string, salt: string, created_at: datetime, updated_at: datetime, remember_token: string, remember_token_expires_at: datetime, first_name: string, last_name: string)]
+options: {:per_page=>nil, :limit=>nil, :offset=>nil}
+ar_options: {}
+[user] stored_fields: nil
+[user] query: asdf
+-->+(last_name:asdf first_name:asdf) +(class_name:User)
+[user] now retrieving records from AR with options: {}
+[user] 1 results from AR: [#<User id: 6, login: "asdf", email: "asdf@asdf.com", crypted_password: "70f6f3e93fbd4ddd742420fc3891e94d8d66e5e1", salt: "1c69890e684fd6437aaf37d2413a08a3b371f64a", created_at: "2009-06-01 19:19:33", updated_at: "2009-06-01 19:19:33", remember_token: nil, remember_token_expires_at: nil, first_name: "asdf", last_name: "asdf">]
+Query: asdf
+total hits: 1, results delivered: 1
+[user] register class User with index user
+[user] refusing re-registration of class User
+index_for [User(id: integer, login: string, email: string, crypted_password: string, salt: string, created_at: datetime, updated_at: datetime, remember_token: string, remember_token_expires_at: datetime, first_name: string, last_name: string)]
+options: {:per_page=>nil, :limit=>nil, :offset=>nil}
+ar_options: {}
+[user] stored_fields: nil
+[user] query: stephen
+-->+(last_name:stephen first_name:stephen) +(class_name:User)
+[user] now retrieving records from AR with options: {}
+[user] 0 results from AR: []
+Query: stephen
+total hits: 0, results delivered: 0
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+index_for [User(id: integer, login: string, email: string, crypted_password: string, salt: string, created_at: datetime, updated_at: datetime, remember_token: string, remember_token_expires_at: datetime, first_name: string, last_name: string)]
+options: {:per_page=>nil, :limit=>nil, :offset=>nil}
+ar_options: {}
+[user] stored_fields: nil
+[user] query: stephen
+-->+(last_name:stephen first_name:stephen) +(class_name:User)
+[user] now retrieving records from AR with options: {}
+[user] 0 results from AR: []
+Query: stephen
+total hits: 0, results delivered: 0
+[user] register class User with index user
+[user] refusing re-registration of class User
+index_for [User(id: integer, login: string, email: string, crypted_password: string, salt: string, created_at: datetime, updated_at: datetime, remember_token: string, remember_token_expires_at: datetime, first_name: string, last_name: string)]
+options: {:per_page=>nil, :limit=>nil, :offset=>nil}
+ar_options: {}
+[user] stored_fields: nil
+[user] query: asdf
+-->+(last_name:asdf first_name:asdf) +(class_name:User)
+[user] now retrieving records from AR with options: {}
+[user] 1 results from AR: [#<User id: 6, login: "asdf", email: "asdf@asdf.com", crypted_password: "70f6f3e93fbd4ddd742420fc3891e94d8d66e5e1", salt: "1c69890e684fd6437aaf37d2413a08a3b371f64a", created_at: "2009-06-01 19:19:33", updated_at: "2009-06-01 19:19:33", remember_token: nil, remember_token_expires_at: nil, first_name: "asdf", last_name: "asdf">]
+Query: asdf
+total hits: 1, results delivered: 1
+[user] register class User with index user
+[user] refusing re-registration of class User
+Will use local index.
+using index in /home/stephen/coffeehearts/index/development/user
+[user] register class User with index user
+[user] default field list for index user: [:last_name, :first_name]
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+index_for [User(id: integer, login: string, email: string, crypted_password: string, salt: string, created_at: datetime, updated_at: datetime, remember_token: string, remember_token_expires_at: datetime, first_name: string, last_name: string)]
+options: {:per_page=>nil, :limit=>nil, :offset=>nil}
+ar_options: {}
+[user] stored_fields: nil
+[user] query: asdf
+-->+(last_name:asdf first_name:asdf) +(class_name:User)
+[user] now retrieving records from AR with options: {}
+[user] 1 results from AR: [#<User id: 6, login: "asdf", email: "asdf@asdf.com", crypted_password: "70f6f3e93fbd4ddd742420fc3891e94d8d66e5e1", salt: "1c69890e684fd6437aaf37d2413a08a3b371f64a", created_at: "2009-06-01 19:19:33", updated_at: "2009-06-01 19:19:33", remember_token: nil, remember_token_expires_at: nil, first_name: "asdf", last_name: "asdf">]
+Query: asdf
+total hits: 1, results delivered: 1
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+index_for [User(id: integer, login: string, email: string, crypted_password: string, salt: string, created_at: datetime, updated_at: datetime, remember_token: string, remember_token_expires_at: datetime, first_name: string, last_name: string)]
+options: {:per_page=>nil, :limit=>nil, :offset=>nil}
+ar_options: {}
+[user] stored_fields: nil
+[user] query: asdf
+-->+(last_name:asdf first_name:asdf) +(class_name:User)
+[user] now retrieving records from AR with options: {}
+[user] 1 results from AR: [#<User id: 6, login: "asdf", email: "asdf@asdf.com", crypted_password: "70f6f3e93fbd4ddd742420fc3891e94d8d66e5e1", salt: "1c69890e684fd6437aaf37d2413a08a3b371f64a", created_at: "2009-06-01 19:19:33", updated_at: "2009-06-01 19:19:33", remember_token: nil, remember_token_expires_at: nil, first_name: "asdf", last_name: "asdf">]
+Query: asdf
+total hits: 1, results delivered: 1
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+index_for [User(id: integer, login: string, email: string, crypted_password: string, salt: string, created_at: datetime, updated_at: datetime, remember_token: string, remember_token_expires_at: datetime, first_name: string, last_name: string)]
+options: {:per_page=>nil, :limit=>nil, :offset=>nil}
+ar_options: {}
+[user] stored_fields: nil
+[user] query: asdf
+-->+(last_name:asdf first_name:asdf) +(class_name:User)
+[user] now retrieving records from AR with options: {}
+[user] 1 results from AR: [#<User id: 6, login: "asdf", email: "asdf@asdf.com", crypted_password: "70f6f3e93fbd4ddd742420fc3891e94d8d66e5e1", salt: "1c69890e684fd6437aaf37d2413a08a3b371f64a", created_at: "2009-06-01 19:19:33", updated_at: "2009-06-01 19:19:33", remember_token: nil, remember_token_expires_at: nil, first_name: "asdf", last_name: "asdf">]
+Query: asdf
+total hits: 1, results delivered: 1
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+Will use local index.
+using index in /home/stephen/coffeehearts/index/development/user
+[user] register class User with index user
+[user] default field list for index user: [:last_name, :first_name]
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+index_for [User(id: integer, login: string, email: string, crypted_password: string, salt: string, created_at: datetime, updated_at: datetime, remember_token: string, remember_token_expires_at: datetime, first_name: string, last_name: string)]
+options: {:per_page=>nil, :limit=>nil, :offset=>nil}
+ar_options: {}
+[user] stored_fields: nil
+[user] query: asdf
+-->+(last_name:asdf first_name:asdf) +(class_name:User)
+[user] now retrieving records from AR with options: {}
+[user] 1 results from AR: [#<User id: 6, login: "asdf", email: "asdf@asdf.com", crypted_password: "70f6f3e93fbd4ddd742420fc3891e94d8d66e5e1", salt: "1c69890e684fd6437aaf37d2413a08a3b371f64a", created_at: "2009-06-01 19:19:33", updated_at: "2009-06-01 19:19:33", remember_token: nil, remember_token_expires_at: nil, first_name: "asdf", last_name: "asdf">]
+Query: asdf
+total hits: 1, results delivered: 1
+[user] register class User with index user
+[user] refusing re-registration of class User
+Will use local index.
+Will use local index.
+Will use local index.
+Will use local index.
+Will use local index.
+Will use local index.
+using index in /home/stephen/coffeehearts/index/development/user
+[user] register class User with index user
+[user] default field list for index user: [:last_name, :first_name]
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+Will use local index.
+[user] register class User with index user
+[user] refusing re-registration of class User
+Will use local index.
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+[user] register class User with index user
+[user] refusing re-registration of class User
+index_for [User(id: integer, login: string, email: string, crypted_password: string, salt: string, created_at: datetime, updated_at: datetime, remember_token: string, remember_token_expires_at: datetime, first_name: string, last_name: string)]
+options: {:per_page=>nil, :limit=>nil, :offset=>nil}
+ar_options: {}
+[user] stored_fields: nil
+[user] query: asdf
+-->+(last_name:asdf first_name:asdf) +(class_name:User)
+[user] now retrieving records from AR with options: {}
+[user] 1 results from AR: [#<User id: 6, login: "asdf", email: "asdf@asdf.com", crypted_password: "70f6f3e93fbd4ddd742420fc3891e94d8d66e5e1", salt: "1c69890e684fd6437aaf37d2413a08a3b371f64a", created_at: "2009-06-01 19:19:33", updated_at: "2009-06-01 19:19:33", remember_token: nil, remember_token_expires_at: nil, first_name: "asdf", last_name: "asdf">]
+Query: asdf
+total hits: 1, results delivered: 1
+[user] register class User with index user
+[user] refusing re-registration of class User
+index_for [User(id: integer, login: string, email: string, crypted_password: string, salt: string, created_at: datetime, updated_at: datetime, remember_token: string, remember_token_expires_at: datetime, first_name: string, last_name: string)]
+options: {:per_page=>nil, :limit=>nil, :offset=>nil}
+ar_options: {}
+[user] stored_fields: nil
+[user] query: Bill
+-->+(last_name:bill first_name:bill) +(class_name:User)
+[user] now retrieving records from AR with options: {}
+[user] 1 results from AR: [#<User id: 4, login: "blah", email: "stephen.foster4@gmail.com", crypted_password: "1e747820be34971c9ad9fcc6a373628f62ccd283", salt: "83366717d70a4fa63ada4cdf642f74b47d7dc5c1", created_at: "2009-06-01 18:35:28", updated_at: "2009-06-01 22:11:33", remember_token: nil, remember_token_expires_at: nil, first_name: "Bill", last_name: "Cosby">]
+Query: Bill
+total hits: 1, results delivered: 1
+[user] register class User with index user
+[user] refusing re-registration of class User

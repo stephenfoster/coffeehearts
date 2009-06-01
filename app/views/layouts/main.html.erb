@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Users: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'scaffold' %>
+</head>
+<body>
+
+<p style="color: white"><%= flash[:notice] %></p>
+
+
+<div id="main_container">
+  <div id="header">
+    <%= yield :header %>
+  </div>
+
+
+  <div id="left_bar">
+  <%= yield :left %>
+  </div>
+
+  <div id="right_bar">
+    <%= yield :right %>
+    <% if current_user.class == User %>
+      <%= link_to "logout", url_for({:controller => :account, :action => :logout}) %>
+    <% end %>
+  </div>
+
+  <div id="content">
+  <%= yield %>
+  </div>
+</div>
+
+
+
+</body>
+</html>

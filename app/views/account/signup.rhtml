@@ -1,16 +1,53 @@
-<%= error_messages_for :user %>
-<% form_for :user do |f| -%>
-<p><label for="login">Login</label><br/>
-<%= f.text_field :login %></p>
 
-<p><label for="email">Email</label><br/>
-<%= f.text_field :email %></p>
+<h1>
+  Free Online Dating + Social Networking = CoffeeHearts.com
+</h1>
+
+<table class="">
+
+<tr>
+<td>
+  <%= error_messages_for :user %>
+  <% form_for :user do |f| -%>
+  <p><label for="login">Login</label><br/>
+  <%= f.text_field :login %></p>
+
+  <p><label for="first_name">First Name</label><br/>
+  <%= f.text_field :first_name %></p>
+
+  <p><label for="last_name">Last Name</label><br/>
+  <%= f.text_field :last_name %></p>
+
+  <p><label for="email">Email</label><br/>
+  <%= f.text_field :email %></p>
+
+  <p><label for="password">Password</label><br/>
+  <%= f.password_field :password %></p>
+
+  <p><label for="password_confirmation">Confirm Password</label><br/>
+  <%= f.password_field :password_confirmation %></p>
+
+  <p><%= submit_tag 'Sign up' %></p>
+  <% end -%>
+</td>
+<td>
+
+<% form_tag url_for(:action => :login) do -%>
+<p><label for="login">Login</label><br/>
+<%= text_field_tag 'login' %></p>
 
 <p><label for="password">Password</label><br/>
-<%= f.password_field :password %></p>
+<%= password_field_tag 'password' %></p>
 
-<p><label for="password_confirmation">Confirm Password</label><br/>
-<%= f.password_field :password_confirmation %></p>
+<!-- Uncomment this if you want this functionality
+<p><label for="remember_me">Remember me:</label>
+<%= check_box_tag 'remember_me' %></p>
+-->
 
-<p><%= submit_tag 'Sign up' %></p>
+<p><%= submit_tag 'Log in' %></p>
 <% end -%>
+
+
+</td>
+</tr>
+</table>

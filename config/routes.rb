@@ -1,14 +1,22 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :statuses
 
-  map.resources :users
+
+  map.resources :users do |users|
+    users.resources :relationships
+  end
+
 
   map.resources :relationships do |relationships|
     relationships.resources :pictures
   end
 
-
   map.resources :accounts
 
+
+  map.home '', :controller => 'account', :action => 'signup'
+  
+  
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
@@ -41,7 +49,7 @@ ActionController::Routing::Routes.draw do |map|
   #   end
 
   # You can have the root of your site routed with map.root -- just remember to delete public/index.html.
-  # map.root :controller => "welcome"
+  # map.root :controller => "main_page"
 
   # See how all your routes lay out with "rake routes"
 
@@ -50,4 +58,5 @@ ActionController::Routing::Routes.draw do |map|
   # consider removing the them or commenting them out if you're using named routes and resources.
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
+
 end

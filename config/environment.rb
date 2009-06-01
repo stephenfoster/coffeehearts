@@ -20,6 +20,8 @@ Rails::Initializer.run do |config|
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   
   config.gem "paperclip"
+  config.gem "ferret"
+  config.gem "mislav-will_paginate", :lib => "will_paginate", :source => "http://gems.github.com/"
 
   # Only load the plugins named here, in the order given (default is alphabetical).
   # :all can be used as a placeholder for all plugins not explicitly named
@@ -40,3 +42,6 @@ Rails::Initializer.run do |config|
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
   # config.i18n.default_locale = :de
 end
+
+require "acts_as_ferret"
+require "will_paginate"

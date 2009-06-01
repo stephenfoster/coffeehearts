@@ -2,7 +2,11 @@ class RelationshipsController < ApplicationController
   # GET /relationships
   # GET /relationships.xml
   def index
-    @relationships = Relationship.all
+    if params[:user_id]
+      @relationships = User.find(params[:user_id]).relationships
+    else    
+      @relationships = Relationship.all 
+    end
 
     respond_to do |format|
       format.html # index.html.erb

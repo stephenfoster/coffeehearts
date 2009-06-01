@@ -1,0 +1,10 @@
+<% if @users %>
+  <h2>Search Results</h2>
+  <%= @users.total_hits %> results
+   
+  <% for user in @users %>
+  <h3><%= link_to(user.name, user_url(user)) %></h3>
+  <% end %>
+   
+  <%= will_paginate @users%>
+<% end %>

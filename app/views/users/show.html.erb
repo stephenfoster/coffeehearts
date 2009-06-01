@@ -1,3 +1,12 @@
+<%= javascript_include_tag "prototype" %>
+
+<%= link_to "edit profile", edit_user_path(@user) %>
+
+<p>
+  <b>Status:</b>
+  <%=h @user.status %>
+</p>
+
 <p>
   <b>First name:</b>
   <%=h @user.first_name %>
@@ -8,6 +17,22 @@
   <%=h @user.last_name %>
 </p>
 
+<p><%= link_to "#{@user.possessive_identifier(current_user)} Relationships", user_relationships_path(@user) %></p>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+
+<% form_remote_tag :update => 'update_me', :url => '/user_search/search' do %>
+  <%= text_field_tag 'query', 'Enter your query here' %>
+  <%= submit_tag "Search" %>
+<% end %>
+
+<div id="update_me">
+</div>
+
+
+<% content_for :right do %>
+  Right!
+<% end %>
+
+<% content_for :left do %>
+  Left!
+<% end %>
