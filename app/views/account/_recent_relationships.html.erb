@@ -1,6 +1,6 @@
 <% if @recent_relationships.size > 0 %>
 <h3> Active Relationships </h3>
-<table>
+<table class="pretty">
 <% @recent_relationships.each do |rel| %>
 <tr>
   <td><%= rel.description %> </td>

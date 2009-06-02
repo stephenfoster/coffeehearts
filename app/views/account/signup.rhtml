@@ -3,8 +3,15 @@
   Free Online Dating + Social Networking = CoffeeHearts.com
 </h1>
 <br/>
-<div class="float_left">
-<table>
+
+
+<table align="center">
+<tr>
+
+
+<td>
+
+<table class="pretty">
 <th> Sign Up </th> <th> Sign In </th>
 <tr>
 <td>
@@ -50,11 +57,18 @@
 </td>
 </tr>
 </table>
-</div>
 
-<div class="float_right">
-  <%= render :partial => "recent_users" %>
+</td>
 
-  <%= render :partial => "recent_relationships" %>
+<td>
 
-</div>
+<%= render :partial => "recent_users" %>
+<%= render :partial => "recent_relationships" %>
+
+
+
+
+</td>
+</tr>
+</table>
+

@@ -146,7 +146,11 @@ a:hover { color: #BF5669; background-color:#5F1825; }
   color: #000;
 }
 
-table {
+table{
+  border-spacing: 50px;
+}
+
+table.pretty {
   border-collapse: collapse;
   border: 1px solid #38160C;
   font: normal 11px verdana, arial, helvetica, sans-serif;
@@ -158,12 +162,12 @@ caption {
   font: normal 11px verdana, arial, helvetica, sans-serif;
   background: transparent;
   }
-td, th {
+table.pretty td, th {
   border: 1px dashed #B85A7C;
   padding: .8em;
   color: #F6ECF0;
   }
-thead th, tfoot th {
+table.pretty thead th, tfoot th {
   font: bold 11px verdana, arial, helvetica, sans-serif;
   border: 1px solid #A85070;;
   text-align: left;
@@ -171,43 +175,43 @@ thead th, tfoot th {
   color: #F6ECF0;
   padding-top:6px;
   }
-tbody td a {
+table.pretty tbody td a {
   background: transparent;
   text-decoration: none;
   color: #F6ECF0;
   }
-tbody td a:hover {
+table.pretty tbody td a:hover {
   background: transparent;
   color: #FFFFFF;
   }
-tbody th a {
+table.pretty tbody th a {
   font: normal 11px verdana, arial, helvetica, sans-serif;
   background: transparent;
   text-decoration: none;
   font-weight:normal;
   color: #F6ECF0;
   }
-tbody th a:hover {
+table.pretty tbody th a:hover {
   background: transparent;
   color: #FFFFFF;
   }
-tbody th, tbody td {
+table.pretty tbody th, tbody td {
   vertical-align: top;
   text-align: left;
   }
-tfoot td {
+table.pretty tfoot td {
   border: 1px solid #38160C;
   background: #38160C;
   padding-top:6px;
   }
-.odd {
+table.pretty .odd {
   background: #7B2342;
   }
-tbody td:hover {
+table.pretty tbody td:hover {
   background: #51152A;
   }
 
-tbody tr:hover th,
-tbody tr.odd:hover th {
+table.pretty tbody tr:hover th,
+table.pretty tbody tr.odd:hover th {
   background: #51152A;
   }
