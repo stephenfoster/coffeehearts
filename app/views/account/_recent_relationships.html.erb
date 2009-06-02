@@ -1,0 +1,11 @@
+<% if @recent_relationships.size > 0 %>
+<h3> Active Relationships </h3>
+<table>
+<% @recent_relationships.each do |rel| %>
+<tr>
+  <td><%= rel.description %> </td>
+  <td><%= image_tag rel.pictures.last.image.url(:thumb) %></td>
+</tr>
+<% end %>
+</table>
+<% end %>

@@ -3,6 +3,10 @@
 <%= link_to "edit profile", edit_user_path(@user) %>
 
 <p>
+  <%= image_tag @user.profile_picture.url(:thumb) unless @user.profile_picture_file_name.nil? %>
+</p>
+
+<p>
   <b>Status:</b>
   <%=h @user.status %>
 </p>

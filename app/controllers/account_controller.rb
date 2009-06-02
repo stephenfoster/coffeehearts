@@ -27,6 +27,10 @@ class AccountController < ApplicationController
   end
 
   def signup
+    @recent_users = User.find(:all, :conditions=>["created_at > ?", Date.today - 7.days]).select{|u| !u.profile_picture_file_name.nil?}.first 5
+    @recent_relationships = Relationship.find(:all, :conditions=>["created_at > ?", Date.today - 7.days]).select{|r| !r.pictures.blank? }.first 5
+
+
     @user = User.new(params[:user])
     return unless request.post?
     @user.save!

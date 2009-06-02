@@ -2,6 +2,11 @@ require 'digest/sha1'
 class User < ActiveRecord::Base
   acts_as_ferret :fields => [:first_name, :last_name]
 
+# Paperclip
+  has_attached_file :profile_picture,
+    :styles => {
+      :thumb=> "100x100#",
+      :small  => "150x150>" }
 
   # Virtual attribute for the unencrypted password
   attr_accessor :password

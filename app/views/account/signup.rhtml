@@ -2,9 +2,10 @@
 <h1>
   Free Online Dating + Social Networking = CoffeeHearts.com
 </h1>
-
-<table class="">
-
+<br/>
+<div class="float_left">
+<table>
+<th> Sign Up </th> <th> Sign In </th>
 <tr>
 <td>
   <%= error_messages_for :user %>
@@ -39,10 +40,8 @@
 <p><label for="password">Password</label><br/>
 <%= password_field_tag 'password' %></p>
 
-<!-- Uncomment this if you want this functionality
 <p><label for="remember_me">Remember me:</label>
 <%= check_box_tag 'remember_me' %></p>
--->
 
 <p><%= submit_tag 'Log in' %></p>
 <% end -%>
@@ -51,3 +50,11 @@
 </td>
 </tr>
 </table>
+</div>
+
+<div class="float_right">
+  <%= render :partial => "recent_users" %>
+
+  <%= render :partial => "recent_relationships" %>
+
+</div>
