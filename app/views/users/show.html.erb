@@ -2,26 +2,31 @@
 
 <%= link_to "edit profile", edit_user_path(@user) %>
 
-<p>
-  <%= image_tag @user.profile_picture.url(:thumb) unless @user.profile_picture_file_name.nil? %>
-</p>
+<table>
+  <tr>
+    <td>Picture</td>
+    <td><%= image_tag @user.profile_picture.url(:thumb) unless @user.profile_picture_file_name.nil? %></td>
+  </tr>
 
-<p>
-  <b>Status:</b>
-  <%=h @user.status %>
-</p>
 
-<p>
-  <b>First name:</b>
-  <%=h @user.first_name %>
-</p>
+  <tr>
+    <td>Status:</td>
+    <td><%=h @user.status %></td>
+  </tr>
 
-<p>
-  <b>Last name:</b>
-  <%=h @user.last_name %>
-</p>
+  <tr>
+    <td>First name:</td>
+    <td><%=h @user.first_name %></td>
+  </tr>
 
-<p><%= link_to "#{@user.possessive_identifier(current_user)} Relationships", user_relationships_path(@user) %></p>
+  <tr>
+    <td>Last name:</td>
+    <td><%=h @user.last_name %></td>
+  </tr>
+
+</table>
+
+<tr><%= link_to "#{@user.possessive_identifier(current_user)} Relationships", user_relationships_path(@user) %></tr>
 
 
 <% form_remote_tag :update => 'update_me', :url => '/user_search/search' do %>
