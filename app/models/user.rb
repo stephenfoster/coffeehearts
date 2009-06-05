@@ -5,7 +5,8 @@ class User < ActiveRecord::Base
 # Paperclip
   has_attached_file :profile_picture,
     :styles => {
-      :thumb=> "100x100#",
+      :thumb=> "200x200#",
+      :small_thumb=> "100x100#",
       :small  => "150x150>" }
 
   # Virtual attribute for the unencrypted password
@@ -21,7 +22,7 @@ class User < ActiveRecord::Base
   validates_presence_of     :password_confirmation,      :if => :password_required?
   validates_length_of       :password, :within => 4..40, :if => :password_required?
   validates_confirmation_of :password,                   :if => :password_required?
-  validates_length_of       :login,    :within => 3..40
+  validates_length_of       :login,    :within => 3..20
   validates_length_of       :email,    :within => 3..100
   validates_uniqueness_of   :login, :email, :case_sensitive => false
   validates_presence_of :first_name
@@ -53,7 +54,7 @@ class User < ActiveRecord::Base
     if self == user
       "My"
     else
-      name + "'s"
+      first_name + "'s"
     end
   end
 

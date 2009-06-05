@@ -1,0 +1,37 @@
+<table class="header">
+	<tr>
+
+		<td class="user_name">
+			<%= @user.login %>
+		</td>
+
+		<td class="nav">
+			<%= link_to_unless_current "Home", current_user %>
+		</td>
+	
+		<td class="nav">
+			<%= link_to_unless_current "Relationships", [current_user, :relationships] %>
+		</td>
+
+		<td class="nav">
+			<%= link_to_unless_current "Search", "" %>
+		</td>
+
+		<td class="nav">
+ 			<%= link_to "logout", url_for({:controller => :account, :action => :logout}) %>
+		</td>
+
+
+<!--
+		<td>
+			<div align="right">
+			<% form_remote_tag :update => 'update_me', :url => '/user_search/search' do %>
+				<%= text_field_tag 'query', 'Enter your query here' %>
+				<%= submit_tag "Search" %>
+			<% end %>
+		</div>
+		</td>
+-->
+	</tr>
+</table>
+

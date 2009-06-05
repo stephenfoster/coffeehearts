@@ -1,7 +1,10 @@
 class RelationshipsController < ApplicationController
+  layout "main"
+
   # GET /relationships
   # GET /relationships.xml
   def index
+    @user = User.find(params[:user_id])
     if params[:user_id]
       @relationships = User.find(params[:user_id]).relationships
     else    

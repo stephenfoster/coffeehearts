@@ -1,8 +1,30 @@
 
-<h1>
-  Free Online Dating + Social Networking = CoffeeHearts.com
-</h1>
-<br/>
+
+
+<table class="header">
+<tr>
+<td>
+<table>
+<tr>
+  <td></td><td>Free Online Dating</td>
+</tr>
+<tr>
+  <td>+</td><td>Social Networking</td>
+</tr>
+<tr>
+  <td></td><td>--------------------------</td>
+</tr>
+<tr>
+  <td></td><td>CoffeeHearts.com</td>
+</tr>
+</table>
+</td>
+
+<td>
+<%#= image_tag @recent_users.first.profile_picture.url(:thumb) %>
+</td>
+</tr>
+</table>
 
 
 <table align="center">
@@ -60,11 +82,12 @@
 
 </td>
 
+<tr>
 <td>
 <%= render :partial => "recent_users" %>
 <%= render :partial => "recent_relationships" %>
 </td>
-
+</tr>
 
 
 </tr>

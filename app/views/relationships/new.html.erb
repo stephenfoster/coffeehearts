@@ -2,7 +2,10 @@
 
 <% form_for(@relationship) do |f| %>
   <%= f.error_messages %>
-
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
   <p>
     <%= f.label :first_user_id %><br />
     <%= collection_select :relationship, :first_user_id, User.all, :id, :full_name %>

@@ -1,8 +1,18 @@
 <%= javascript_include_tag "prototype" %>
 
+<%= render :partial=>"shared/user_header" %>
+
 <%= link_to "edit profile", edit_user_path(@user) %>
 
 <table>
+<th>Information</th>
+<th><%= @user.possessive_identifier(current_user) %> Relationships</th>
+
+
+<tr>
+<td>
+
+<table class="pretty">
   <tr>
     <td>Picture</td>
     <td><%= image_tag @user.profile_picture.url(:thumb) unless @user.profile_picture_file_name.nil? %></td>
@@ -14,34 +24,38 @@
     <td><%=h @user.status %></td>
   </tr>
 
-  <tr>
-    <td>First name:</td>
-    <td><%=h @user.first_name %></td>
-  </tr>
+</table>
+</td>
 
-  <tr>
-    <td>Last name:</td>
-    <td><%=h @user.last_name %></td>
-  </tr>
+<td>
 
+<table>
+
+<% @user.relationships.each do |rel| %>
+<tr>
+<td>
+<table class="pretty">
+  <tr>
+    <td><%= image_tag rel.pictures.first.image.url(:thumb) if rel.pictures.first %></td>
+    <td><%=h rel.name %></td>
+  </tr>
+</table>
+</td>
+</tr>
+<% end %>
+<tr><td><%= link_to "Show all Relationships", user_relationships_path(@user) %></td></tr>
 </table>
 
-<tr><%= link_to "#{@user.possessive_identifier(current_user)} Relationships", user_relationships_path(@user) %></tr>
+</td>
+</tr>
+</table>
 
 
-<% form_remote_tag :update => 'update_me', :url => '/user_search/search' do %>
-  <%= text_field_tag 'query', 'Enter your query here' %>
-  <%= submit_tag "Search" %>
-<% end %>
-
-<div id="update_me">
-</div>
 
 
 <% content_for :right do %>
-  Right!
+  <div id="update_me" align="left">
+  </div>
 <% end %>
 
-<% content_for :left do %>
-  Left!
-<% end %>
+

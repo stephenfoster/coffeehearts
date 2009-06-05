@@ -24,9 +24,11 @@
 
   <div id="right_bar">
     <%= yield :right %>
+<!--
     <% if current_user.class == User %>
       <%= link_to "logout", url_for({:controller => :account, :action => :logout}) %>
     <% end %>
+-->
   </div>
 
   <div id="content">
