@@ -1,23 +1,23 @@
 <%= render :partial=>"shared/user_header" %>
 
-<h1>LLLListing relationships</h1>
-
+<h1>Listing relationships</h1>
 
 <table>
   <tr>
-    <th>Picture</th>
-    <th>Name</th>
-    <th>With</th>
+    <th></th>
+    <th>Person</th>
+    <th></th>
+    <th>Relationship</th>
+    <th>Status</th>
   </tr>
 
 <% @relationships.each do |relationship| %>
   <tr>
     <td><%= image_tag relationship.main_picture.url(:thumb) %></td>
-    <td><%= relationship.name %></td>
     <td><%= link_to relationship.other(@user).name, relationship.other(@user) %></td>
-    <td><%= link_to 'Show', relationship %></td>
-    <td><%= link_to 'Edit', edit_relationship_path(relationship) %></td>
-    <td><%= link_to 'Destroy', relationship, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td>is <%= @user.possessive_identifier(current_user) %></td>
+    <td><%= link_to relationship.name_for(@user), relationship %></td>
+    <td><%= relationship.status_message_for(current_user) %></td>
   </tr>
 <% end %>
 </table>

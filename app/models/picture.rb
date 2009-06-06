@@ -1,5 +1,6 @@
 class Picture < ActiveRecord::Base
   belongs_to :relationship
+  belongs_to :user
 
 # Paperclip
   has_attached_file :image,

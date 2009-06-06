@@ -12,8 +12,9 @@ class User < ActiveRecord::Base
   # Virtual attribute for the unencrypted password
   attr_accessor :password
 
-  has_many :initiated_relationships, :foreign_key => :first_user_id, :class_name => "Relationship"
-  has_many :received_relationships, :foreign_key => :second_user_id, :class_name => "Relationship"
+  has_many :perspectives
+
+  has_many :relationships, :through => :perspectives
 
   has_many :statuses
 
@@ -52,15 +53,12 @@ class User < ActiveRecord::Base
 
   def possessive_identifier(user)
     if self == user
-      "My"
+      "your"
     else
-      first_name + "'s"
+      login + "'s"
     end
   end
 
-  def relationships
-    initiated_relationships + received_relationships
-  end
 
   # Encrypts some data with the salt.
   def self.encrypt(password, salt)

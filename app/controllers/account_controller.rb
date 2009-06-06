@@ -46,6 +46,8 @@ class AccountController < ApplicationController
     cookies.delete :auth_token
     reset_session
     flash[:notice] = "You have been logged out."
+    current_user.last_logout = Time.now
+    current_user.save
     redirect_back_or_default(:controller => '/account', :action => 'signup')
   end
 end

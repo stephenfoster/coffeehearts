@@ -9,7 +9,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090604202521) do
+ActiveRecord::Schema.define(:version => 20090606011754) do
+
+  create_table "perspectives", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.string   "picture_file_name"
+    t.string   "picture_content_type"
+    t.integer  "picture_file_size"
+    t.integer  "user_id"
+    t.integer  "relationship_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "pictures", :force => true do |t|
     t.integer  "relationship_id"
@@ -21,11 +33,10 @@ ActiveRecord::Schema.define(:version => 20090604202521) do
     t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
   end
 
   create_table "relationships", :force => true do |t|
-    t.integer  "first_user_id"
-    t.integer  "second_user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "description"
@@ -53,6 +64,7 @@ ActiveRecord::Schema.define(:version => 20090604202521) do
     t.string   "profile_picture_file_name"
     t.string   "profile_picture_content_type"
     t.integer  "profile_picture_file_size"
+    t.datetime "last_logout"
   end
 
 end
