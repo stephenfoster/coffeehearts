@@ -9,7 +9,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090606011754) do
+ActiveRecord::Schema.define(:version => 20090607021747) do
+
+  create_table "blog_links", :force => true do |t|
+    t.string   "link"
+    t.integer  "user_id"
+    t.integer  "conversation_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "conversations", :force => true do |t|
+    t.integer  "relationship_id"
+    t.integer  "user_id"
+    t.string   "topic"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "perspectives", :force => true do |t|
     t.string   "name"
@@ -34,6 +50,7 @@ ActiveRecord::Schema.define(:version => 20090606011754) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
+    t.integer  "conversation_id"
   end
 
   create_table "relationships", :force => true do |t|
@@ -46,6 +63,14 @@ ActiveRecord::Schema.define(:version => 20090606011754) do
   create_table "statuses", :force => true do |t|
     t.string   "status"
     t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "text_blocks", :force => true do |t|
+    t.text     "note"
+    t.integer  "user_id"
+    t.integer  "conversation_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

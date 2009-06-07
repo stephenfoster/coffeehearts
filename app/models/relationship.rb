@@ -1,8 +1,9 @@
 class Relationship < ActiveRecord::Base
   has_many :perspectives
-  has_many :pictures
 
   has_many :users, :through=>:perspectives
+ 
+  has_many :conversations, :order=>"created_at DESC"
 
   validates_presence_of :name
 
@@ -31,6 +32,14 @@ class Relationship < ActiveRecord::Base
 
   def perspective_for(user)
     perspectives.select{|p| p.user == user}.first
+  end
+
+  def perspective_for_first_user
+    perspectives.first
+  end
+
+  def perspective_for_second_user
+    perspectives.second
   end
 
   def status_message_for(user)
@@ -65,5 +74,17 @@ class Relationship < ActiveRecord::Base
   #Will be inefficient.  Refactor.
   def all_content
     pictures + perspectives
+  end
+
+  def combined_perspective
+    perspectives.collect{|p| p.name}.join(" / ")
+  end
+
+  def combined_user_names
+    users.collect{|u| u.login}.join(" and ")
+  end
+
+  def pictures
+    conversations.collect{|c| c.pictures}.flatten
   end
 end

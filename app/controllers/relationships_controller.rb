@@ -21,6 +21,7 @@ class RelationshipsController < ApplicationController
   # GET /relationships/1.xml
   def show
     @relationship = Relationship.find(params[:id])
+    @user = @relationship.other(current_user)
 
     respond_to do |format|
       format.html # show.html.erb

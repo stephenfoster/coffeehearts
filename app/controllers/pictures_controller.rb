@@ -2,9 +2,9 @@ class PicturesController < ApplicationController
   # GET /pictures
   # GET /pictures.xml
   def index
-    @pictures = Picture.find(:all, :conditions => ["relationship_id = ?", params[:relationship_id]])
+    @pictures = Picture.find(:all, :conditions => ["conversation_id = ?", params[:conversation_id]])
 
-    @relationship = Relationship.find(params[:relationship_id])
+    @conversation = Relationship.find(params[:conversation_id])
 
     respond_to do |format|
       format.html # index.html.erb
@@ -16,7 +16,7 @@ class PicturesController < ApplicationController
   # GET /pictures/1.xml
   def show
     @picture = Picture.find(params[:id])
-    @relationship = Relationship.find(params[:relationship_id])
+    @conversation = Relationship.find(params[:conversation_id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -28,9 +28,9 @@ class PicturesController < ApplicationController
   # GET /pictures/new.xml
   def new
     @picture = Picture.new
-    @relationship = Relationship.find(params[:relationship_id])
+    @conversation = Conversation.find(params[:conversation_id])
 
-    @picture.relationship_id = @relationship.id
+    @picture.conversation_id = @conversation.id
 
     respond_to do |format|
       format.html # new.html.erb
@@ -41,24 +41,25 @@ class PicturesController < ApplicationController
   # GET /pictures/1/edit
   def edit
     @picture = Picture.find(params[:id])
-    @relationship = Relationship.find(params[:relationship_id])
+    @conversation = Conversation.find(params[:conversation_id])
   end
 
   # POST /pictures
   # POST /pictures.xml
   def create
     @picture = Picture.new(params[:picture])
-    @relationship = Relationship.find(params[:relationship_id])
+    @conversation = Conversation.find(params[:conversation_id])
 
-    @picture.relationship_id = @relationship.id
+    @picture.conversation_id = @conversation.id
+    @picture.user_id = current_user.id
     
     
 
     respond_to do |format|
       if @picture.save
         flash[:notice] = 'Picture was successfully created.'
-        format.html { redirect_to(@picture.relationship, @picture) }
-        format.xml  { render :xml => @picture, :status => :created, :location => [@picture.relationship,@picture ] }
+        format.html { render(@picture.conversation, @picture) }
+        format.xml  { render :xml => @picture, :status => :created, :location => [@picture.conversation,@picture ] }
       else
         format.html { render :action => "new" }
         format.xml  { render :xml => @picture.errors, :status => :unprocessable_entity }
@@ -74,7 +75,7 @@ class PicturesController < ApplicationController
     respond_to do |format|
       if @picture.update_attributes(params[:picture])
         flash[:notice] = 'Picture was successfully updated.'
-        format.html { redirect_to(@picture.relationship,@picture) }
+        format.html { redirect_to(@picture.conversation,@picture) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -90,7 +91,7 @@ class PicturesController < ApplicationController
     @picture.destroy
 
     respond_to do |format|
-      format.html { redirect_to(relationship_pictures_url) }
+      format.html { redirect_to(conversation_pictures_url) }
       format.xml  { head :ok }
     end
   end

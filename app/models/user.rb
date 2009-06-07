@@ -18,6 +18,8 @@ class User < ActiveRecord::Base
 
   has_many :statuses
 
+  has_many :initiated_conversations, :class_name => "Conversation"
+
   validates_presence_of     :login, :email
   validates_presence_of     :password,                   :if => :password_required?
   validates_presence_of     :password_confirmation,      :if => :password_required?
@@ -104,6 +106,13 @@ class User < ActiveRecord::Base
   def to_s
     full_name
   end
+
+  def conversations
+   list = relationships.collect{|r| r.conversations}.flatten.sort_by{|c| c.updated}
+
+   list.reverse
+  end
+
 
   protected
     # before filter 

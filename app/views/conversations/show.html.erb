@@ -1,0 +1,25 @@
+  <%= render :partial => "shared/relationship_header" %>
+  <%= render :partial => "shared/relationship_sub_nav" %>
+
+<h1 align="right">
+<%= link_to "Make a New Post", edit_conversation_path(@conversation) %>
+</h1>
+<table>
+  <th></th>
+  <th><%= @relationship.first_user.possessive_identifier(current_user) %> posts</th>
+  <th><%= @relationship.second_user.possessive_identifier(current_user) %> posts</th>
+
+<% @conversation.communications.each do |c| %>
+  <tr>
+  <td><%= ((Time.now - c.created_at) / ( 60 * 60 * 24)).round %> days ago</td>
+  <% if c.user == @relationship.first_user %>
+    <td><%= display_media(c) %></td><td class="empty"></td>
+  <% else %>
+    <td class="empty"></td><td><%= display_media(c) %></td>
+  <% end %> 
+  </tr>
+  <tr class="empty"></tr>
+<% end %>
+
+</table>
+

@@ -3,10 +3,11 @@
 	<tr>
 
 		<td class="user_name">
-			<%= @user.login %>
+			<%= @relationship.combined_user_names %>
 		</td>
 
 		<%= render :partial => "shared/nav_cells" %>
+
 	</tr>
 </table>
 <% end %>

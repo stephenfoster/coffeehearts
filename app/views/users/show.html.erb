@@ -37,7 +37,8 @@
 <table class="pretty">
   <tr>
     <td><%= image_tag rel.pictures.first.image.url(:thumb) if rel.pictures.first %></td>
-    <td><%=h rel.name %></td>
+    <td><%= rel.description %></td>
+    <%= link_to rel.perspective_for(@user).name, rel %>
   </tr>
 </table>
 </td>

@@ -1,5 +1,5 @@
 
-
+<% content_for :header do %>
 
 <table class="header">
 <tr>
@@ -9,7 +9,7 @@
   <td></td><td>Free Online Dating</td>
 </tr>
 <tr>
-  <td>+</td><td>Social Networking</td>
+  <td></td><td>+ Social Networking</td>
 </tr>
 <tr>
   <td></td><td>--------------------------</td>
@@ -21,11 +21,12 @@
 </td>
 
 <td>
-<%#= image_tag @recent_users.first.profile_picture.url(:thumb) %>
+<%#= image_tag User.find(1).profile_picture.url(:thumb), {:height=>100,:width => 100} %> 
 </td>
 </tr>
 </table>
 
+<% end %>
 
 <table align="center">
 <tr>

@@ -1,0 +1,20 @@
+                <td class="nav">
+                        <%= link_to_unless_current "Home", current_user %>
+                </td>
+
+                <td class="nav">
+                        <%= link_to_unless_current "Relationships", [current_user, :relationships] %>
+                </td>
+
+                <td class="nav">
+                        <%= link_to_unless_current "Conversations", [current_user, :conversations] %>
+                </td>
+
+                <td class="nav">
+                        <%= link_to_unless_current "Search", "" %>
+                </td>
+
+                <td class="nav">
+                        <%= link_to "logout", url_for({:controller => :account, :action => :logout}) %>
+                </td>
+

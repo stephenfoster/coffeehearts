@@ -1,19 +1,43 @@
-<p>
-  <b>First user:</b>
-  <%=h @relationship.first_user %>
-</p>
+<%= render :partial => "shared/relationship_header" %>
+<%= render :partial => "shared/relationship_sub_nav" %>
 
-<p>
-  <b>Second user:</b>
-  <%=h @relationship.second_user %>
-</p>
 
-<p>
-  <b>Pictures<b><br/>
-  <% @relationship.pictures.sort_by{|p| p.updated_at}.each do |pic| %>
-    <%= link_to (image_tag pic.image.url, {:width=>200, :height=>150}), relationship_picture_path(@relationship,pic) %> <br/>
-  <% end %>
-</p>
+<h1>Perspectives on this Relationship</h1>
+<table>
+<tr>
 
-<%= link_to 'Edit', edit_relationship_path(@relationship) %> |
-<%= link_to 'Back', relationships_path %>
+<td>
+<table>
+  <th><%= @relationship.first_user.possessive_identifier(current_user) %> perspective</th>
+  <th><%= @relationship.second_user.possessive_identifier(current_user) %> perspective</th>
+
+<!--
+  <tr>
+    <td>Other Person Looks Like:</td>
+    <td><%= @relationship.perspective_for_first_user.picture %></td>
+    <td><%= @relationship.perspective_for_second_user.picture %></td>
+  </tr>
+-->
+
+  <tr>
+    <td>Other Person:</td>
+    <td><%= @relationship.perspective_for_first_user.name %></td>
+    <td><%= @relationship.perspective_for_second_user.name %></td>
+  </tr>
+
+  <tr>
+    <td>Description of Relationship:</td>
+    <td><%= @relationship.perspective_for_first_user.description %></td>
+    <td><%= @relationship.perspective_for_second_user.description %></td>
+  </tr>
+</table>
+</td>
+
+<td>
+<%= image_tag @relationship.main_picture.url(:thumb) %>
+</td>
+
+</tr>
+</table>
+
+

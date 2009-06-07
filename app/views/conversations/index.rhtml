@@ -1,0 +1,39 @@
+<% if @relationship %>
+  <%= render :partial => "shared/relationship_header" %>
+  <%= render :partial => "shared/relationship_sub_nav" %>
+<% elsif @user %>
+  <%= render :partial => "shared/user_header" %>
+<% end %>
+
+
+<h1>Conversations</h1>
+
+<table class="pretty">
+<th>Status</th>
+<th>Topic</th>
+<th>Date</th>
+<th>Relationship</th>
+<th>Last Poster</th>
+<th>Last Post</th>
+
+<% @conversations.each do |c| %>
+<tr>
+  <td><%= c.status_for(current_user) %></td>
+  <td><%= link_to c.topic.to_s, c %></td>
+  <td><%= c.created_at.to_s(:long) %></td>
+  <td>
+     <%= pic_for(c.relationship) %>
+     <%= link_to c.relationship.combined_user_names, c.relationship %>
+  </td> 
+  <td>
+      <%= pic_for(c.last_post.user) if c.last_post %>
+      <%= link_to c.last_post.user.login, c.last_post.user if c.last_post and c.last_post.user %>
+   </td> 
+  <td>
+    <%= display_media( c.last_post ) %>
+    <%= link_to "View post", c %>
+  </td>
+</tr>
+<% end %>
+
+</table>

@@ -24,8 +24,6 @@
 
 #header {
   width: 100%;
-  height: 150px;
-  background-image: url(coffeehearts.jpg);
   background-repeat: repeat;
   background-position: right;
 }
@@ -180,6 +178,11 @@ table.pretty {
   color: #F6ECF0;
   background: #641B35;
   }
+
+table.pretty a {
+  
+}
+
 caption {
   text-align: left;
   font: normal 11px verdana, arial, helvetica, sans-serif;
@@ -200,9 +203,8 @@ table.pretty thead th, tfoot th {
   }
 table.pretty tbody td a {
   background: transparent;
-  text-decoration: none;
-  color: #F6ECF0;
-  }
+  color: #000;
+}
 table.pretty tbody td a:hover {
   background: transparent;
   color: #FFFFFF;
@@ -235,8 +237,21 @@ table.pretty tbody td:hover {
 
 table.pretty tbody tr:hover th,
 table.pretty tbody tr.odd:hover th {
-  background: #51152A;
   }
+
+table.sub_header
+{
+  font-size: 20px;
+  
+  background-color: #23020F;
+  width: 100%;
+  padding: 2px;
+  margin-bottom: 20px;
+}
+
+table.sub_header td{
+  text-align: center;
+}
 
 table.header td{
   color: #BF3049;

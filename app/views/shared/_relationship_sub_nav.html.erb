@@ -1,0 +1,24 @@
+<table class="sub_header">
+	<tr>
+                <td class="nav">
+                        <%= link_to_unless_current "Perspectives", @relationship %>
+                </td>
+
+                <td class="nav">
+                        <%= link_to_unless_current "Conversations", relationship_conversations_path(@relationship) %>
+                </td>
+
+                <td class="nav">
+                        <%= link_to_unless_current "Pictures", "" %>
+                </td>
+
+		<td class="nav">
+			<%= link_to_unless_current @relationship.first_user.login, @relationship.first_user %>
+		</td>
+
+		<td class="nav">
+			<%= link_to_unless_current @relationship.second_user.login, @relationship.second_user %>
+		</td>
+
+	</tr>
+</table>

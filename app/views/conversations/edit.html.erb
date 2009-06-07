@@ -1,0 +1,21 @@
+  <%= render :partial => "shared/relationship_header" %>
+  <%= render :partial => "shared/relationship_sub_nav" %>
+
+<h1>Post text</h1>
+<% form_for [@conversation,@text_block] do |form| %>
+  <%= form.text_area :note %>
+  <%= form.submit %>
+<% end %> 
+
+<h1>Post picture</h1>
+<% form_for [@conversation,@picture], :html => { :multipart => true } do |form| %>
+    <%= form.file_field :image%>
+    <%= form.text_field :title %>
+    <%= form.submit %>
+<% end %>
+
+<h1>Post Blog Link</h1>
+<% form_for [@conversation,@blog_link] do |form| %>
+  <%= form.text_field :link %>
+  <%= form.submit %>
+<% end %> 
